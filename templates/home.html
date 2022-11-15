@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+
+    <form>
+        <input name="name" type="text" value="{{ name }}">
+        <input type="submit" value="Input your name">
+    </form>
+
+    <h1>Awesome Website</h1>
+
+    <h2>{{ name }}, you'll want to see this!</h2>
+
+    {% for page in pages %}
+    <article>
+        <h3>{{ page.title }}</h3>
+        <p>{{ page.description }}</p>
+        <p>
+            <a href="/page/{{ page.id }}/?name={{ name }}">Read More</a>
+        </p>
+    </article>
+    {% endfor %}
+</body>
+</html>
