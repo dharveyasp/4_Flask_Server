@@ -39,3 +39,13 @@ def post_detail(pk=None):
         }
 
         return render_template('page.html', **context)
+
+
+@app.route("/hello/")
+def hello():
+    user_name = request.args.get('name', '')
+
+    context = {
+        'name': user_name,
+    }
+    return render_template('hello.html', **context)
