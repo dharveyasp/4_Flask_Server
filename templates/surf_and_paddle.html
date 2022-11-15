@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SURF & PADDLE CO. BLOG</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/Surf-Logo.png') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='surf_and_paddle_styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+<div class="header">
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="{{ url_for('static', filename='images/Surf-Logo.png') }}" alt="Brand Img">
+            </a>
+        </div>
+        <div class="nav-container">
+            <ul class="navbar-left">
+                <li class="nav-item">
+                    SURF & PADDLE CO. BLOG
+                </li>
+            </ul>
+            <ul class="navbar-right">
+                <li class="nav-item">
+                    <a href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">SEARCH</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="title">
+        SURF & PADDLE CO.
+    </h1>
+    <h6 class="subtitle">
+        A Metalyard Academy Project Est. Fall 2022
+    </h6>
+</div>
+<div class="main-section">
+    <div class="row">
+        <div class="article">
+            <div class="headline">
+                A Fantastic Engaging Headline Goes Here
+            </div>
+            <div class="author-info">
+                <img src="{{ url_for('static', filename='images/Surfboard.png') }}" class="author-icon">
+                <span class="blog-author">Annie Marie</span>
+                <span class="extra-time-text"> on </span>
+                <span class="time-text">Monday Oct. 7th 9:22pm</span>
+            </div>
+            <div class="article-content">
+                <p>Godfather ipsum dolor sit amet. Do me this favor. I won't forget it. Ask your friends in the neighborhood about me. They'll tell you I know how to return a favor. Sonny, please don't do anything. Please don't do anything. The hotel, the casino. The Corleone Family wants to buy you out. My father is no different than any powerful man, any man with power, like a president or senator. Friends and money - oil and water.</p>
+                <br>
+                <p>Don't ever give an order like that again. Not while I'm alive. Never let anyone know what you are thinking. My father's name was Antonio Andolini... and this is for you. What's wrong with being a lawyer?</p>
+                <blockquote>WOAH, THAT'S RADICAL!</blockquote>
+                <p>Only don't tell me you're innocent. Because it insults my intelligence and makes me very angry. I'm gonna make him an offer he can't refuse. Leave the gun. Take the cannoli. I want your answer and the money by noon tomorrow. And one more thing. Don't you contact me again, ever. From now on, you deal with Turnbull. I have a sentimental weakness for my children and I spoil them, as you can see. They talk when they should listen.</p>
+                <br>
+                <p>I see you took the name of the town. What was your father's name? Do me this favor. I won't forget it. Ask your friends in the neighborhood about me. They'll tell you I know how to return a favor. Michael, you never told me you knew Johnny Fontane! Your enemies always get strong on what you leave behind. I don't trust a doctor who can hardly speak English.</p>
+            </div>
+            <div class="social-buttons">
+                <ul>
+                    <li class="article-action" id="read-comments">
+                            <i class="fa-solid fa-comment"></i>
+                        <span>Read Comments</span>
+                    </li>
+                    <li class="article-action" id="read-later">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <span>Read Later</span>
+                    </li>
+                    <li class="article-action" id="share-post">
+                        <i class="fa-solid fa-share-from-square"></i>
+                        <span>Share Post</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="author">
+                <img src="{{ url_for('static', filename='images/Surfboard.png') }}" class="author-img">
+                <p class="author-name">Annie Marie</p>
+                <ul class="author-socials">
+                <li>Twitter</li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+            </ul>
+            </div>
+            <div class="ad">
+                <img src="{{ url_for('static', filename='images/Surf-Ad.jpeg') }}" class="ad-square">
+                <p class="ad-caption">
+                    <a href="#">About This Ad</a>
+                </p>
+            </div>
+            <div class="sidebar-paragraph">
+                <h1 class="sidebar-heading">Sidebar Section Heading</h1>
+                <p class="sidebar-text">Godfather ipsum dolor sit amet. If anything in this life is certain, if history has taught us anything, it is that you can kill anyone. It's a Sicilian message. It means Luca Brasi sleeps with the fishes. Just when I thought I was out... they pull me back in. Vito, how do you like my little angel? Isn't she beautiful?</p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr id="hr-1">
+<div class="lower-section">
+    <h1 class="headline">
+        MOST POPULAR POSTS
+    </h1>
+    <div class="other-posts">
+        <div class="col-3">
+            <a href="#">
+                <div
+                    class="posts"
+                    style="background-image: url(../static/images/Bar-Shakers.jpg);"
+                >
+                    <div class="post-text">Another Cool Post</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-3">
+            <a href="#">
+                <div
+                    class="posts"
+                    style="background-image: url(../static/images/Beach.jpg);"
+                >
+                    <div class="post-text">Post Title</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-3">
+            <a href="#">
+                <div
+                    class="posts"
+                    style="background-image: url(../static/images/Bar-Drinks.jpg);"
+                >
+                    <div class="post-text">Here's another Longer post title</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-3">
+            <a href="#">
+                <div
+                    class="posts"
+                    style="background-image: url(../static/images/Bar-Shakers.jpg);"
+                >
+                    <div class="post-text">Oh cool a post!</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+    <nav id="footer-nav">
+        <ul id="footer-nav-list">
+            <li id="logo">
+                <img src="{{ url_for('static', filename='images/Win-Logo.png') }}" id="logo-img">
+            </li>
+            <li id="legal-text">The Windowyard Copyright 2022, All Rights Reserved</li>
+            <li class="footer-nav-menu">Nav Item 4</li>
+            <li class="footer-nav-menu">Nav Item 3</li>
+            <li class="footer-nav-menu">Nav Item 2</li>
+            <li class="footer-nav-menu">Nav Item 1</li>
+        </ul>
+    </nav>
+</div>
+</div>
+</body>
+</html>

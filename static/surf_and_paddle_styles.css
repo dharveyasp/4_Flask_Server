@@ -1,0 +1,391 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+.col-3{
+  width: 25%;
+}
+.container{
+  display: inline-flex;
+  margin: auto;
+  overflow: hidden;
+}
+a{
+  width: 100%;
+}
+img{
+  width: 100%;
+}
+a:link{
+  text-decoration: none;
+  color: inherit;
+}
+a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+a:active{text-decoration: none;}
+.header{
+  position: relative;
+  background: url(http://cdn.cnn.com/cnnnext/dam/assets/180626120721-05-spectacular-coastlines---malabar-coast.jpg) no-repeat center center;
+  height: 524px;
+  width: 100%;
+}
+.header:before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 100, 255, 0.4);
+}
+.navbar{
+  display: flex;
+  padding-top: 10px;
+  margin: auto;
+  width: 75%;
+  position: relative;
+  text-align: center;
+
+}
+.nav-container{
+  display: inline-flex;
+  flex-grow: 1;
+}
+.navbar-brand{
+  margin-right: 10px;
+  height: 50px;
+  width: 50px;
+}
+.navbar-left{
+  list-style: none;
+  display: inline-flex;
+  margin-right: auto;
+  font-family: "Open Sans";
+  font-weight: bolder;
+}
+.navbar-right{
+  list-style: none;
+  display: inline-flex;
+  justify-content: end;
+  font-family: Oswald;
+}
+.nav-item{
+  padding-inline:5px;
+  font-size: 18px;
+  color: #0B3550;
+  display: inline-flex;
+  align-self: center;
+  font-family: Open Sans;
+}
+.navbar-right > li > a{
+  font-family: Oswald;
+}
+.title{
+  position: relative;
+  font-size: 80px;
+  font-weight: normal;
+  font-family: Open Sans;
+  color: white;
+  text-align: center;
+  padding-top: 168px;
+}
+.subtitle{
+  position: relative;
+  bottom: 15px;
+  font-size: 15px;
+  font-weight: 900;
+  font-family: Open Sans;
+  color: #0D3958;
+  text-align: center;
+}
+.main-section{
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  margin: 0 -44px 68px -44px;
+}
+.article{
+  width: 63.673469387%;
+  padding: 70px 44px 0 44px;
+}
+.headline{
+  color: #0D3958;
+  font-size: 60px;
+  font-family: Oswald;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.author-info{
+  display: block;
+  height: 40px;
+  margin-bottom: 40px;
+}
+.author-icon{
+  height: 30px;
+  width: 30px;
+  margin-top: 8px;
+  margin-right: 5px;
+  float: left;
+  border-radius: 50%;
+}
+.blog-author{
+  color: #307AB6;
+  font-size: 11px;
+  float: left;
+  padding-top: 15px;
+}
+.extra-time-text{
+  color: #bfcbd4;
+  font-size: 10px;
+  padding-left: 3px;
+  float: left;
+  padding-top: 16px;
+}
+.time-text{
+  color: #bfcbd4;
+  font-size: 10px;
+  padding-left: 3px;
+  float: left;
+  padding-top: 16px;
+  text-decoration: underline;
+}
+.article-content{
+  color: #626769;
+  font-size: 16px;
+}
+blockquote{
+  color: #3d87c5;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-left: solid 2px #bfcbd4;
+  padding: 10px 25px 10px 10px;
+  margin: 25px 5px 25px 5px;
+}
+.social-buttons{
+  margin-top: 15px;
+}
+.article-action{
+  list-style: none;
+  float: left;
+  background: #9dadb3;
+  color: #fafcfe;
+  font-size: 14px;
+  text-align: center;
+  margin: 5px;
+}
+.article-action > span{
+  display: flex;
+  padding: 4px;
+  align-self: center;
+}
+#read-comments > i{
+  list-style: none;
+  float: left;
+  background: #5E686F;
+  color: #fafcfe;
+  text-align: center;
+  padding: 7px;
+}
+#read-later > i{
+  list-style: none;
+  float: left;
+  background: #5E686F;
+  color: #fafcfe;
+  text-align: center;
+  padding: 7px;
+}
+#share-post{
+  background: #3d87c5;
+}
+#share-post > i{
+  list-style: none;
+  float: left;
+  background: #083452;
+  color: #fafcfe;
+  text-align: center;
+  padding: 7px;
+}
+.sidebar{
+  width: 36.326530612%;
+  padding: 82px 44px 0 44px;
+  float: right;
+  display: block;
+}
+.author{
+  text-align: center;
+}
+.author-img{
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+.author-name{
+  color: #3d87c5;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.author-socials{
+  list-style: none;
+  padding-top: 4px;
+  display: inline-block;
+  text-align: center;
+}
+.author-socials li{
+  font-size: 10px;
+  float: left;
+  padding: 0 7px 0 7px;
+  color: #bfcbd4;
+}
+.ad{
+  clear: both;
+  margin: 30px 0 40px 0;
+  text-align: center;
+  width: 100%;
+}
+.ad-square{
+  clear: both;
+  width: 100%;
+  text-align: center;
+}
+.ad-caption{
+  color: #bfcbd4;
+  font-size: 10px;
+  display: block;
+  text-align: right;
+  font-family: "Open Sans";
+  text-decoration: underline;
+}
+.ad-caption > a{
+  color: #bfcbd4;
+}
+.sidebar-paragraph{
+  width: 100%;
+}
+.sidebar-heading{
+  text-align: left;
+  text-transform: uppercase;
+  color: #3d87c5;
+  font-family: Oswald;
+  font-size: 14px;
+}
+.sidebar-text{
+  text-align: left;
+  color: #bfcbd4;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Open Sans";
+}
+.lower-section{
+  width: 100%;
+  text-align: center;
+}
+.lower-section > h1{
+  margin: 42px 0 46px 0;
+}
+.other-posts{
+  width: 100%;
+  display: flex;
+}
+.posts{
+  position: relative;
+  width: 100%;
+  height: 25vw;
+  background-size: cover;
+}
+.posts > img{
+  object-fit: cover;
+}
+.post-text{
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  color: #1068A4;
+}
+.posts:before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 100, 255, 0.4);
+  transition: all 0.5s;
+}
+.posts:hover::before{
+  background-color: rgba(0, 0, 0, 0);
+}
+.post-text:hover{
+  color: white;
+  transition: all 0.3s;
+}
+.other-posts > div > a{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.footer{
+  display: block;
+  width: 100%;
+  background: #0B3551;
+}
+#footer-nav{
+  margin: auto;
+  display: inline-block;
+  background: #0B3551;
+  clear: both;
+  width: 75%;
+}
+#footer-nav-list{
+  list-style: none;
+  display: block;
+}
+#footer-nav li{
+  font-family: "Open Sans";
+  font-size: 11px;
+  color: #bfcbd4;
+}
+#logo{
+  float: left;
+  margin-top: 0;
+}
+#logo-img{
+  height: 45px;
+  width: 45px;
+  float: left;
+  margin: 10px;
+}
+#legal-text{
+  float: left;
+  font-family: "Open Sans";
+  font-size: 11px;
+  color: #bfcbd4;
+  margin-top: 25px;
+}
+.footer-nav-menu{
+  float: right;
+  display: inline-block;
+  padding: 0 9px 0 9px;
+  border-left: dimgray solid 1px;
+  margin-top: 25px;
+}
