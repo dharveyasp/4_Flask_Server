@@ -49,3 +49,8 @@ def hello():
         'name': user_name,
     }
     return render_template('hello.html', **context)
+
+
+@app.route("/surf-and-paddle/")
+def surf_and_paddle():
+    return render_template('surf_and_paddle.html')
